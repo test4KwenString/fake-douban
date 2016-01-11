@@ -1,0 +1,29 @@
+header.gheader
+  section.sign-in-up
+    ul
+      li.gheader-item: a(href="https://www.douban.com") 登录
+      li.gheader-item: a(href="https://www.douban.com") 注册
+  section.app-download
+    ul
+      li(class="gheader-item dropdown")
+        a(href="https://www.douban.com") 下载豆瓣客户端
+        #app-download-info
+          h3.appintro 豆瓣
+            small 3.0
+          p 和有趣的人做有趣的事
+          p.qrcode
+          .download-app
+           a(href="www.douban.com") iPhone
+           span .
+           a(href="www.douban.com") Android
+
+  section.gnav
+    ul.gheader-items-nav
+      each header_item in header_items
+        li.gheader-item: a(href=header_item.link) #{header_item.name}
+      li(class="gheader-item dropdown")
+        a 更多
+        ul.more-gheader-items
+          li.gheader-more-item: a(href="https://www.douban.com") 一刻
+          li.gheader-more-item: a(href="https://www.douban.com") 一拍一
+

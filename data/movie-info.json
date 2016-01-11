@@ -1,0 +1,45 @@
+{
+    "header_items": [
+        {"name": "豆瓣",    "link": "https://douban.com"},
+        {"name": "读书",    "link": "https://book.douban.com"},
+        {"name": "电影",    "link": "https://movie.douban.com"},
+        {"name": "音乐",    "link": "https://music.douban.com"},
+        {"name": "同城",    "link": "https://www.douban.com/location"},
+        {"name": "小组",    "link": "https://www.douban.com/group"},
+        {"name": "阅读",    "link": "https://read.douban.com"},
+        {"name": "FM",      "link": "https://douban.fm"},
+        {"name": "东西",    "link": "https://dongxi.douban.com"},
+        {"name": "市集",    "link": "https://market.douban.com"}
+    ],
+
+    "movie_nav_items":  [
+     {"name": "影讯&购票", "link": "https://movie.douban.com/nowplaying"},
+     {"name": "选电影",    "link": "https://movie.douban.com/explore"},
+     {"name": "电视剧",    "link": "https://movie.douban.com/tv"},
+     {"name": "排行榜",    "link": "https://movie.douban.com/chart"},
+     {"name": "分类",      "link": "https://movie.douban.com/tag"},
+     {"name": "影评",      "link": "https://movie.douban.com/review/best"},
+     {"name": "预告片",    "link": "https://movie.douban.com/trailers"},
+     {"name": "问答",      "link": "https://movie.douban.com/hot_questionis/all"}
+    ],
+    "screening_items": [
+      {"title": "唐人街探案", "poster": "https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2296241450.jpg",  "release_year": "2015", "rate": "7.5", "duration": "135分钟", "region": "中国大陆", "director": "陈思诚"},
+      {"title": "小门神", "poster": "https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2299783299.jpg", "release_year": "2016", "rate": "6.4", "duration": "125分钟", "region": "中国大陆", "director": "思诚"},
+      {"title": "一切都好","poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2295237788.jpg",  "release_year": "2015", "rate": "4.5", "duration": "135分钟", "region": "中国大陆", "director": "陈诚"},
+      {"title": "皇帝的新装之圣诞大明星","poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2298878987.jpg",  "release_year": "2015", "rate": "7.5", "duration": "125分钟", "region": "中国大陆", "director": "陈思诚"},
+      {"title": "老炮", "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2292976849.jpg", "release_year": "2015", "rate": "9.5", "duration": "125分钟", "region": "中国", "director": "陈思诚"},
+      {"title": "寻龙决", "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2284620292.jpg", "release_year": "2015", "rate": "0.5", "duration": "135分钟", "region": "中国大陆", "director": "陈思诚"},
+      {"title": "一念天堂", "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2291470073.jpg", "release_year": "2015", "rate": "2.5", "duration": "125分钟", "region": "中国大陆", "director": "陈思"},
+      {"title": "恶棍天使","poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2298326979.jpg",  "release_year": "2015", "rate": "4.5", "duration": "135分钟", "region": "中国陆", "director": "陈诚"},
+      {"title": "索命按摩师", "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2266679578.jpg", "release_year": "2015", "rate": "6.5", "duration": "125分钟", "region": "中国", "director": "陈诚"},
+      {"title": "咕噜咕噜美人鱼", "poster": "https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2281072860.jpg", "release_year": "2015", "rate": "7.0", "duration": "135分钟", "region": "中国大陆", "director": "陈思诚"} ,
+      {"title": "圣诞大赢家",  "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2290128994.jpg","release_year": "2015", "rate": "7.0", "duration": "125分钟", "region": "中国大陆", "director": "陈诚"},
+      {"title": "万万没想到",  "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2291070523.jpg","release_year": "2015", "rate": "7.8", "duration": "135分钟", "region": "中国大陆", "director": "陈诚"},
+      {"title": "舌尖上的新年",  "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2288351348.jpg","release_year": "2015", "rate": "2.5", "duration": "125分钟", "region": "中国", "director": "陈思诚"},
+      {"title": "果宝特攻水果大逃亡", "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2299848619.jpg", "release_year": "2015", "rate": "3.5", "duration": "125分钟", "region": "中国大陆", "director": "陈思诚"},
+      {"title": "冰美人","poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2288040839.jpg",  "release_year": "2015", "rate": "4.5", "duration": "135分钟", "region": "中国大陆", "director": "陈诚"},
+      {"title": "探秘者", "poster": "https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2292682621.jpg", "release_year": "2015", "rate": "5.5", "duration": "125分钟", "region": "中国大陆", "director": "陈思"},
+      {"title": "舌尖上的新年",  "poster": "https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2288351348.jpg","release_year": "2015", "rate": "2.5", "duration": "125分钟", "region": "中国", "director": "思诚"},
+      {"title": "咕噜咕噜美人鱼", "poster": "https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2281072860.jpg", "release_year": "2015", "rate": "6.5", "duration": "135分钟", "region": "中国大陆", "director": "思诚"}
+    ]
+}

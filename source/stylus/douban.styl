@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after
+  box-sizing border-box
+
+body,div,dl,dt,dd,
+ul,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,blockquote,
+form,fieldset,legend,
+input,button,textarea
+  margin 0
+  padding 0
+
+body
+  font-size 12px
+  font-family "Helvetica Neue", Arial, sans-serif
+  line-height 1.62
+
+ul,ol
+  list-style none
+
+h1,h2,h3,h4,h5,h6
+  font-size 100%
+  font-weight normal
+
+h1
+  margin 0
+  padding 0 0 15px 0
+  color #494949
+  font-size 2em
+  font-weight bold
+  line-height 1.1
+  word-wrap break-word
+
+h2
+  margin 0 0 12px 0
+  color #072
+  font-size 1.3em
+  line-height 1.5
+
+h3
+  margin 0 0 1px 4px
+  background-color #f2fbf2
+  color #666
+  font-size 1.2em
+  font-family "Helvetica Neue", Arial, sans-serif
+  line-height 1.8
+
+h4
+  margin 0 0 10px 4px
+  background-color #f2fbf2
+  color #666
+  font-size 1em
+  font-family "Helvetica Neue", Arial, sans-serif
+  line-height 1.62
+
+a
+  cursor pointer
+  &:link
+    color #37a
+    text-decoration none
+  &:visited
+    color #669
+    text-decoration none
+  &:hover
+    background #37a
+    //background #371
+    color #fff
+    text-decoration none
+  &:active
+    color #fff
+    text-decoration none
+    background #f93
+  img
+    border-width 0
+    vertical-align middle
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus
+  outline 0
+

@@ -1,0 +1,14 @@
+{
+    "header_items": [
+        {"name": "豆瓣",    "link": "https://douban.com"},
+        {"name": "读书",    "link": "https://book.douban.com"},
+        {"name": "电影",    "link": "https://movie.douban.com"},
+        {"name": "音乐",    "link": "https://music.douban.com"},
+        {"name": "同城",    "link": "https://www.douban.com/location"},
+        {"name": "小组",    "link": "https://www.douban.com/group"},
+        {"name": "阅读",    "link": "https://read.douban.com"},
+        {"name": "FM",      "link": "https://douban.fm"},
+        {"name": "东西",    "link": "https://dongxi.douban.com"},
+        {"name": "市集",    "link": "https://market.douban.com"}
+    ]
+}

@@ -1,0 +1,99 @@
+doctype html
+html(zh-cmn-CN)
+  head
+    meta(charset="UTF-8")
+    title 豆瓣电影
+    link(rel="stylesheet", href="./css/douban.css")
+    link(rel="stylesheet", href="./css/gheader.css")
+    link(rel="stylesheet" href="./css/movie.css")
+  body
+    include gheader.douban.jade
+    .movie-header-wrapper
+      header.movie-header
+        h1.movie-logo
+          a(href='/'): img(src="https://img3.doubanio.com/f/shire/a609704aa5d2023971b0aec731c4b09031240c9c/pics/nav/lg_movie@2x.png", alt='豆瓣电影', width='115', height='26')
+
+        .movie-search
+          form(action="/", method="get")
+            input#inp-query.movie-search__inputbox(type='text', size='22', maxlength='60', placeholder='电影、影人、影院、电视剧')
+            #inp-submit-wrapper
+              input#inp-submit.movie-search__submitbtn(type='submit', value='')
+
+        nav.movie-nav.clearfix
+          ul
+            each item in movie_nav_items 
+              li.movie-nav__item: a(href=item.link) #{item.name}
+     
+        .header-bg: a(href="https://www.douban.com"): img(src="https://img3.doubanio.com/f/movie/7930feb437531da01ec7001a72037c2e46ea1bec/pics/movie/events/annual2015/ad_web.png", alt="豆瓣电影2015年度榜单", width="186", height="96")
+
+      .split-line
+    .movie-content-wrapper
+      .movie-content
+        main.movie-main
+          article.screening
+            section.screening-header
+              .slider-control-panel
+                #slider-arrow
+                  span#slider-prev-btn ‹
+                  span#slider-next-btn ›
+
+              h4 正在热映
+                span: a(href="#") 全部正在热映»
+                span: a(href="#") 即将上映»
+            - var pagesNum = Math.ceil(screening_items.length/4);
+            - var i = 0;
+            section.screening-content
+              ul.cycle-slideshow(
+              data-cycle-slides=".screening-page"
+              data-cycle-fx="scrollHorz"
+              data-cycle-timeout="5000"
+              data-cycle-speed="1000"
+              data-cycle-pause-on-hover="true"
+              data-cycle-prev="#slider-prev-btn"
+              data-cycle-next="#slider-next-btn")
+                while i < pagesNum
+                  li.screening-page
+                    each scr_item in screening_items.slice(i*4,  (++i)*4)
+                      div.screening-item
+                        div.screening-item--poster: a: img(src=scr_item.poster, width="128")
+                        div.screening-item--info 
+                          h3 #{scr_item.title}
+                            span #{scr_item.release_year}
+                          div.screening-item--rate
+                          - var rate = scr_item.rate;
+                          if (rate === "")
+                            span 暂无评分
+                          else
+                            - var ratingStarsClass = "rating-stars-" + Math.round(rate);
+                            span.rating-stars(class=ratingStarsClass)
+                            span.rating-digits #{rate}
+
+                          p
+                            span #{scr_item.duration}
+                            span #{scr_item.region}
+                          p 
+                            span 导演
+                            span #{scr_item.director}
+                        div.screening-item--title: h4 #{scr_item.title}
+                        div.screening-item--rate
+                          - var rate = scr_item.rate;
+                          if (rate === "")
+                            span 暂无评分
+                          else
+                            - var ratingStarsClass = "rating-stars-" + Math.round(rate);
+                            span.rating-stars(class=ratingStarsClass)
+                            span.rating-digits #{rate}
+                        div.screening-item--booking: a(href="#") 选座购票
+          div.movie-tvplay-filter
+            section.movie-or-tvplay
+              input(type="radio" id="movie-radio" name="movie-or-tvplay" checked="checked")
+              label(for="movie-radio") 选电影
+              span /
+              input(type="radio" id="tvplay-radio" name="movie-or-tvplay")
+              label(for="tvplay-radio") 选电视剧
+          
+
+        aside.movie-aside
+    script(src="http://code.jquery.com/jquery-2.1.4.min.js")
+    script(src="http://malsup.github.io/jquery.cycle2.js")
+    script(src="scripts/app.js")

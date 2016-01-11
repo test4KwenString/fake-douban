@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html zh-cmn-CN>
+  <head>
+    <meta charset="UTF-8">
+    <title>豆瓣电影</title>
+    <link rel="stylesheet" href="./css/douban.css">
+    <link rel="stylesheet" href="./css/gheader.css">
+    <link rel="stylesheet" href="./css/movie.css">
+  </head>
+  <body>
+    <header class="gheader">
+      <section class="sign-in-up">
+        <ul>
+          <li class="gheader-item"><a href="https://www.douban.com">登录</a></li>
+          <li class="gheader-item"><a href="https://www.douban.com">注册</a></li>
+        </ul>
+      </section>
+      <section class="app-download">
+        <ul>
+          <li class="gheader-item dropdown"><a href="https://www.douban.com">下载豆瓣客户端</a>
+            <div id="app-download-info">
+              <h3 class="appintro">豆瓣<small>3.0</small></h3>
+              <p>和有趣的人做有趣的事</p>
+              <p class="qrcode"></p>
+              <div class="download-app"><a href="www.douban.com">iPhone</a><span>.</span><a href="www.douban.com">Android</a></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="gnav">
+        <ul class="gheader-items-nav">
+          <li class="gheader-item"><a href="https://douban.com">豆瓣</a></li>
+          <li class="gheader-item"><a href="https://book.douban.com">读书</a></li>
+          <li class="gheader-item"><a href="https://movie.douban.com">电影</a></li>
+          <li class="gheader-item"><a href="https://music.douban.com">音乐</a></li>
+          <li class="gheader-item"><a href="https://www.douban.com/location">同城</a></li>
+          <li class="gheader-item"><a href="https://www.douban.com/group">小组</a></li>
+          <li class="gheader-item"><a href="https://read.douban.com">阅读</a></li>
+          <li class="gheader-item"><a href="https://douban.fm">FM</a></li>
+          <li class="gheader-item"><a href="https://dongxi.douban.com">东西</a></li>
+          <li class="gheader-item"><a href="https://market.douban.com">市集</a></li>
+          <li class="gheader-item dropdown"><a>更多</a>
+            <ul class="more-gheader-items">
+              <li class="gheader-more-item"><a href="https://www.douban.com">一刻</a></li>
+              <li class="gheader-more-item"><a href="https://www.douban.com">一拍一</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <div class="movie-header-wrapper">
+      <header class="movie-header">
+        <h1 class="movie-logo"><a href="/"><img src="https://img3.doubanio.com/f/shire/a609704aa5d2023971b0aec731c4b09031240c9c/pics/nav/lg_movie@2x.png" alt="豆瓣电影" width="115" height="26"></a></h1>
+        <div class="movie-search">
+          <form action="/" method="get">
+            <input id="inp-query" type="text" size="22" maxlength="60" placeholder="电影、影人、影院、电视剧" class="movie-search__inputbox">
+            <div id="inp-submit-wrapper">
+              <input id="inp-submit" type="submit" value="" class="movie-search__submitbtn">
+            </div>
+          </form>
+        </div>
+        <nav class="movie-nav clearfix">
+          <ul>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/nowplaying">影讯&amp;购票</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/explore">选电影</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/tv">电视剧</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/chart">排行榜</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/tag">分类</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/review/best">影评</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/trailers">预告片</a></li>
+            <li class="movie-nav__item"><a href="https://movie.douban.com/hot_questionis/all">问答</a></li>
+          </ul>
+        </nav>
+        <div class="header-bg"><a href="https://www.douban.com"><img src="https://img3.doubanio.com/f/movie/7930feb437531da01ec7001a72037c2e46ea1bec/pics/movie/events/annual2015/ad_web.png" alt="豆瓣电影2015年度榜单" width="186" height="96"></a></div>
+      </header>
+      <div class="split-line"></div>
+    </div>
+    <div class="movie-content-wrapper">
+      <div class="movie-content">
+        <main class="movie-main">
+          <article class="screening">
+            <section class="screening-header">
+              <div class="slider-control-panel">
+                <div id="slider-arrow"><span id="slider-prev-btn">‹</span><span id="slider-next-btn">›</span></div>
+              </div>
+              <h4>正在热映<span><a href="#">全部正在热映»</a></span><span><a href="#">即将上映»</a></span></h4>
+            </section>
+            <section class="screening-content">
+              <ul data-cycle-slides=".screening-page" data-cycle-fx="scrollHorz" data-cycle-timeout="5000" data-cycle-speed="1000" data-cycle-pause-on-hover="true" data-cycle-prev="#slider-prev-btn" data-cycle-next="#slider-next-btn" class="cycle-slideshow">
+                <li class="screening-page">
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2296241450.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>唐人街探案<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-8"></span><span class="rating-digits">7.5</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>唐人街探案</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-8"></span><span class="rating-digits">7.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2299783299.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>小门神<span>2016</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-6"></span><span class="rating-digits">6.4</span>
+                      <p><span>125分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>小门神</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-6"></span><span class="rating-digits">6.4</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2295237788.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>一切都好<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-5"></span><span class="rating-digits">4.5</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>一切都好</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-5"></span><span class="rating-digits">4.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2298878987.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>皇帝的新装之圣诞大明星<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-8"></span><span class="rating-digits">7.5</span>
+                      <p><span>125分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>皇帝的新装之圣诞大明星</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-8"></span><span class="rating-digits">7.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                </li>
+                <li class="screening-page">
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2292976849.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>老炮<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-10"></span><span class="rating-digits">9.5</span>
+                      <p><span>125分钟</span><span>中国</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>老炮</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-10"></span><span class="rating-digits">9.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2284620292.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>寻龙决<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-1"></span><span class="rating-digits">0.5</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>寻龙决</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-1"></span><span class="rating-digits">0.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2291470073.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>一念天堂<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-3"></span><span class="rating-digits">2.5</span>
+                      <p><span>125分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>一念天堂</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-3"></span><span class="rating-digits">2.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2298326979.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>恶棍天使<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-5"></span><span class="rating-digits">4.5</span>
+                      <p><span>135分钟</span><span>中国陆</span></p>
+                      <p> <span>导演</span><span>陈诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>恶棍天使</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-5"></span><span class="rating-digits">4.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                </li>
+                <li class="screening-page">
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2266679578.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>索命按摩师<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-7"></span><span class="rating-digits">6.5</span>
+                      <p><span>125分钟</span><span>中国</span></p>
+                      <p> <span>导演</span><span>陈诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>索命按摩师</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-7"></span><span class="rating-digits">6.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2281072860.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>咕噜咕噜美人鱼<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-7"></span><span class="rating-digits">7.0</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>咕噜咕噜美人鱼</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-7"></span><span class="rating-digits">7.0</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2290128994.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>圣诞大赢家<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-7"></span><span class="rating-digits">7.0</span>
+                      <p><span>125分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>圣诞大赢家</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-7"></span><span class="rating-digits">7.0</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2291070523.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>万万没想到<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-8"></span><span class="rating-digits">7.8</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>万万没想到</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-8"></span><span class="rating-digits">7.8</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                </li>
+                <li class="screening-page">
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2288351348.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>舌尖上的新年<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-3"></span><span class="rating-digits">2.5</span>
+                      <p><span>125分钟</span><span>中国</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>舌尖上的新年</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-3"></span><span class="rating-digits">2.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2299848619.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>果宝特攻水果大逃亡<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-4"></span><span class="rating-digits">3.5</span>
+                      <p><span>125分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>果宝特攻水果大逃亡</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-4"></span><span class="rating-digits">3.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2288040839.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>冰美人<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-5"></span><span class="rating-digits">4.5</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>冰美人</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-5"></span><span class="rating-digits">4.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2292682621.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>探秘者<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-6"></span><span class="rating-digits">5.5</span>
+                      <p><span>125分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>陈思</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>探秘者</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-6"></span><span class="rating-digits">5.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                </li>
+                <li class="screening-page">
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img1.doubanio.com/view/movie_poster_cover/mpst/public/p2288351348.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>舌尖上的新年<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-3"></span><span class="rating-digits">2.5</span>
+                      <p><span>125分钟</span><span>中国</span></p>
+                      <p> <span>导演</span><span>思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>舌尖上的新年</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-3"></span><span class="rating-digits">2.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                  <div class="screening-item">
+                    <div class="screening-item--poster"><a><img src="https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2281072860.jpg" width="128"></a></div>
+                    <div class="screening-item--info"> 
+                      <h3>咕噜咕噜美人鱼<span>2015</span></h3>
+                      <div class="screening-item--rate"></div><span class="rating-stars rating-stars-7"></span><span class="rating-digits">6.5</span>
+                      <p><span>135分钟</span><span>中国大陆</span></p>
+                      <p> <span>导演</span><span>思诚</span></p>
+                    </div>
+                    <div class="screening-item--title">
+                      <h4>咕噜咕噜美人鱼</h4>
+                    </div>
+                    <div class="screening-item--rate"><span class="rating-stars rating-stars-7"></span><span class="rating-digits">6.5</span>
+                    </div>
+                    <div class="screening-item--booking"><a href="#">选座购票</a></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </article>
+          <div class="movie-tvplay-filter">
+            <section class="movie-or-tvplay">
+              <input type="radio" id="movie-radio" name="movie-or-tvplay" checked="checked">
+              <label for="movie-radio">选电影</label><span>/</span>
+              <input type="radio" id="tvplay-radio" name="movie-or-tvplay">
+              <label for="tvplay-radio">选电视剧</label>
+            </section>
+          </div>
+        </main>
+        <aside class="movie-aside"></aside>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
